@@ -11,8 +11,10 @@ void main() {
 class ResponsiveTest extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    double width = MediaQuery.of(context).size.width;
     // TODO: implement build
-    return Scaffold(body: width > 400 ? LargeScreen() : SmallScreen());
+    return Scaffold(
+        body: MediaQuery.of(context).size.width > 500
+            ? LargeScreen()
+            : SmallScreen());
   }
 }
