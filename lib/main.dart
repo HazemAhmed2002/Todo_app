@@ -11,7 +11,7 @@ void main() {
 class ResponsiveTest extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
+
     return Scaffold(
         body: MediaQuery.of(context).size.width > 500
             ? LargeScreen()
